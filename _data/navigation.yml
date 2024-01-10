@@ -3,17 +3,14 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "AI"
+  - title: "ML/DL Research Papers Topics"
     url: /talks/    
 
-  - title: "Teaching"
+  - title: "University Subjects"
     url: /teaching/    
     
   - title: "Portfolio"
     url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
     
   - title: "CV"
     url: /cv/

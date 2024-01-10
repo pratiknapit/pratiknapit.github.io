@@ -11,49 +11,54 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Mathematics, University of Michigan, 2024 (expected)
+* B.S. in Mathematics, UNSW, 2020-2023
+* B.S. in Actuarial Studies, UNSW, 2020-2023
+
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Private Equity Intern, Arcus Partners
+  * Private Equity and Growth Equity investments 
+  * Investment modelling, VC/Private Equity specific financial analysis.
+  * Date: January 2024 - Present
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Quantitative Research Intern, Frame Funds
+  * Testing and researching trading models for Australian futures market.
+  * Used python to model out financial models and derivative pricing for futures trading.
+  * Date: August 2023 - November 2023
+
+* Software Engineer Intern, National Australia Bank
+  * Backend software engineering focused on building automated credit system for business credit loans.
+  * Tech stack: Kotlin/Java, AWS, Docker, Kubernetes, Git.
+  * Date: January 2023 - July 2023
+
+* Data Assurance Associate, PwC
+  * Data analyst within Trust & Risky advisory division 
+  * Used python to build automated scripting tools, SQL for database querying, and other data processing tools for projects including Alteryx, Tableau, Excel.
+  * Date: December 2021 - July 2022
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* Mathematical Modelling
+* Software Engineering
+  * Backend engineering 
+  * AWS cloud engineering 
+  * DevOps 
+* Machine learning research
+* Investment and entrepreneurship
+* Programming languages: C, C++, Java, Kotlin, Python.
   
-Talks
+Projects
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
-Teaching
+Others
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
