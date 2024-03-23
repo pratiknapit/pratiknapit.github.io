@@ -1,18 +1,18 @@
 # main links links
 main:
-  - title: "Publications"
+  - title: "Research Papers"
     url: /publications/
 
-  - title: "ML/DL Research Papers Topics"
+  - title: "ML/DL Research Topics"
     url: /talks/    
 
   - title: "University Subjects"
     url: /teaching/    
     
-  - title: "Portfolio"
+  - title: "Computer Science Projects"
     url: /portfolio/
     
-  - title: "CV"
+  - title: "Resume-CV"
     url: /cv/
     
   - title: "Guide"

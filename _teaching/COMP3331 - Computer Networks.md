@@ -4,11 +4,11 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/COMP3331
 venue: "UNSW"
-date: 2023-01-01
+date: 2024-01-01
 location: "City, Country"
 ---
 
-This course is an introductory course on computer networks, focused on common paradigms and protocols used in present data communication. Through lectures, in-class activities, labs and assignments, you will learn the theory and application of 
+This course is an introductory course on computer networks, focused on common paradigms and protocols used in present data communication. Through lectures, in-class activities, labs and assignments, you will learn the theory and application of the following.
 
 1. medium access control, congestion control, flow control, and reliable transmission,
 2. addressing and naming,

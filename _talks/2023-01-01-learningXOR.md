@@ -3,10 +3,13 @@ title: "Learning XOR"
 collection: talks
 type: "Deep Learning Fundamentals"
 permalink: /talks/2014-03-01-talk-3
-venue: "Leaning XOR Functions with Feedforward NN"
+venue: "Learning XOR Functions with Feedforward NN"
 date: 2024-01-01
 location: "Sydney, Australia"
 ---
+
+Learning the XOR function using a multilayer perceptron.
+
 <style>
 .large-code {
     font-size: 1.5em; /* Adjust the size as needed */
