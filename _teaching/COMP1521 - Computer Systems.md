@@ -83,6 +83,45 @@ Examples of operations that might be provided by system call:
 - terminate a process
 - send information via a network
 
+Some important Unix system calls:
+0 - read - read some bytes from a file descriptor
+1 - write - write some bytes to a file descriptor
+2 - open - open a file system object, returning a file descriptor
+3 - close - stop using a file descriptor
+4 - stat - get file system metadata for a pathname
+8 - lseek - move file descriptor to a specified offset within a file
 
+The above system calls manipulate files as a stream of bytes accessed via a **file descriptor**.
+- File descriptor are small integers.
+- Really index to a per-process array maintained by OS
+
+On Unix-like systems: a **file** is a sequence (array) of zero or more bytes.
+- There is no meaning for bytes associated with the file.
+- File metadata does not record that it is e.g. ASCII, MP4, JPG, etc. 
+- Unix-like files are just bytes.
+
+### C Library Wrappers for System Calls
+
+On Unix-like systems there are C library functions corresponding to each system call, 
+- e.g. open, read, write, close
+- the syscall function is not used in normal coding
+
+These functions are not portable. C used on many non-Unix systems provide implementations of these functions. 
+
+POSIX standardises a few of these functions, but it is better to use functions from standard C library, which is available everywhere.
+- e.g. fopen, fgets, fputc from stdio.h
+- on Unix-like systems these will call open, read, write
+- on other platforms, will call other low-level functions
+
+But sometimes we need to use lower level non-portable functions
+- e.g. a database implementations need precise control over I/O applications
+
+If we want to open file at **pathname**, accourding to **flags** we can run the below function.
+
+```java
+int open(char *pathname, int flags);
+```
+
+Flags is a bit-mask defined in <fcntl.h>. 
 
 
