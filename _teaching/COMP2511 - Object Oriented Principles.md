@@ -72,6 +72,27 @@ Subtypes must be substitutable for their base types.
 
 If heritance does not make sense, then we should **favour composition over inheritance**. If you favour delegation, composition over inheritance, your software will be more flexible, easier to maintain and extend. 
 
+## Design Patterns
+
+Creational Patterns: 
+- Factory Method
+- Abstract Factory Method
+- Builder
+- Singleton
+
+Structural Patterns
+- Adapter
+- Composite
+- Decorator
+
+Behavioural Patterns
+- Iterator
+- Observer
+- State
+- Strategy
+- Template 
+- Visitor
+
 ### Strategy pattern
 
 Allows you to encapsulate a family of algorithms. Enables you to "change behaviour" at run-time.
@@ -344,6 +365,80 @@ Define the skeleton of an algorithm in an operation, deferring some steps to sub
 
 A *template method* defines the skeleton (structure) of a behaviour (by implementing the invariant parts). 
 
+### Behavioural Pattern: Visitor Pattern
+
+Visitor is a behavioural design pattern that adds new operations/behaviours to the exisitng objects without modifying them. 
+
+The visitor design pattern is a way of seperating an algorithm from an object structure on which it operates.
+
+A practical result of this separation is the ability to add new operations to existing objectr structures without modifying the structures. 
+
+It is one way to follow the *open/close principle*.
+
+```java
+
+public interface CarElementVisitable {
+    void accept(CarElementVisitor visitor);
+}
+
+public class Wheel implements CarElementVisitable {
+    @Override
+    void accept(CarElementVisitor visitor) {
+        return;
+    }
+}
+
+```
+
+Applicability: 
+- many unrelated operations on an object structure are required
+- new classes that make uip the object structure are known and not expected to change
+- new operations need to be added frequently
+- an algorithm involves several classes of the object structure, but it is desired to mange it in one single location.
+- an algorithm needs to work across several indpeendent class hierarchies
+
+### Programming Pattern: Iterator Pattern
+
+Under the hood.
+
+```java
+Iterator<String> iter = shoppingList.iterator();
+while (iter.hasNext()) {
+    String item = iter.next();
+    System.out.println(item);
+}
+```
+
+Mutable objects - concurrency problems
+Immutable objects - not modified. 
+
+## Test Design
+
+Test-driven development (TDD). 
+Requirements/Specifications --> Interfaces (method signatures, pre post conditions) --> Test Sets (Unit testing, Integration test, etc.) --> Classes (method implementations)
+
+Code coverage: is a useful metric that can help you asses the quality of your test suite.
+
+Common metrics in most coverage reports include:
+- Function coverage: how many functions defined have been called.
+- Statement coverage
+- Brnaches coverage
+- Condition coverage
+- Line coverage
+
+### Randomness
+
+Software Testing:
+- random data is often seen as unbiased data
+
+Software Simulation:
+- generating random behaviours/movements
+
+### Spectrum of tests: unit, integration, systems, usability / acceptance
+
+Unit tests test a single piece of functionality. To make our tests unit-like by reducing the number of dependencies as much as possible. 
+- Mock testing and mock objects can be used, though we must know the functionality of the methods we are mocking. 
+
 ## Refactoring
 
 Code refactoring is the process of restructuring existing computer code without changing its external behaviour. 
@@ -443,6 +538,24 @@ Let's have m1(? v1, ? v2) or m1(T v1, T v2), here we want to use T for both argu
 
 So when there is a relationship between types we want to use character T. 
 
+## Unknown 
+
+2 types of unknowns we need to handle gracefully:
+- Known unknowns
+- Unknown unknowns
+
+Iterative design
+- work in sprints, iterations, milestones
+- 'Agile' software development
+
+Solution
+- High level design
+- adapt and change. 
+
+Software becomes a beast
+- When software reaches a certain level of complexity, it becomes alive, and constantly moving.
+- Changes in one class/package will have changes in other places due to coupling. 
+- Test is very important here.
 
 
 
