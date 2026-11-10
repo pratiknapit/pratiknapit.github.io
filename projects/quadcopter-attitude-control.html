@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quadcopter Flight Control | Pratik Napit</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Reduce spacing between project sections */
+        section {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        /* Centre GitHub button */
+        .github-link {
+            text-align: center;
+            margin: 30px auto;
+        }
+
+        /* Project images */
+        .project-image {
+            max-width: 850px;
+            width: 100%;
+            margin: 25px auto;
+            text-align: center;
+        }
+
+        .project-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">PN.</div>
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction -->
+    <section class="hero">
+
+        <p class="subtitle">CONTROL SYSTEMS / ROBOTICS / DYNAMICS</p>
+
+        <h1>
+            Quadcopter <span>Flight Control</span>
+        </h1>
+
+        <p class="description">
+            Developed a mathematical model and cascaded feedback
+            control architecture for a quadcopter UAV using
+            state-space methods, MATLAB and Simulink.
+        </p>
+
+    </section>
+
+    <!-- Overview -->
+    <section>
+        <h2>Project Overview</h2>
+
+        <p>
+            This project investigates the dynamic modelling,
+            simulation and control of a quadcopter unmanned
+            aerial vehicle (UAV).
+        </p>
+
+        <p>
+            A nonlinear dynamic model was developed to describe
+            the translational and rotational motion of the drone.
+            The system was linearised around an operating point
+            to enable state-space analysis and feedback controller
+            design.
+        </p>
+    </section>
+
+    <!-- Mathematical Modelling -->
+    <section>
+        <h2>Mathematical Modelling</h2>
+
+        <p>
+            Developed a mathematical representation of quadcopter
+            dynamics, considering the relationship between
+            rotor-generated forces, torques and vehicle motion.
+        </p>
+
+        <ul>
+            <li><strong>Translational Dynamics:</strong> Modelled the drone's position and velocity in three-dimensional space.</li>
+            <li><strong>Rotational Dynamics:</strong> Modelled roll, pitch and yaw motion using rotational equations of motion.</li>
+            <li><strong>Nonlinear System:</strong> Developed the nonlinear equations governing the quadcopter's behaviour.</li>
+            <li><strong>State-Space Representation:</strong> Linearised the dynamics around an equilibrium operating point to obtain an LTI model.</li>
+        </ul>
+    </section>
+
+    <!-- Controller Design -->
+    <section>
+        <h2>Control System Design</h2>
+
+        <p>
+            Designed a cascaded feedback control architecture
+            to regulate the quadcopter's attitude and position.
+            State-feedback control was used to influence the
+            closed-loop dynamics and achieve the desired response.
+        </p>
+
+        <ul>
+            <li><strong>Cascaded Control:</strong> Implemented interconnected control loops for attitude and position regulation.</li>
+            <li><strong>State Feedback:</strong> Designed feedback gains using pole placement to achieve desired closed-loop dynamics.</li>
+            <li><strong>PID Control:</strong> Incorporated proportional, integral and derivative control to regulate system responses.</li>
+            <li><strong>Actuator Constraints:</strong> Investigated motor saturation and anti-windup mechanisms to improve controller behaviour.</li>
+        </ul>
+    </section>
+
+    <!-- Control Architecture Image -->
+    <div class="project-image">
+        <img src="../images/quadcopter-simulink.png"
+             alt="Quadcopter cascaded control architecture">
+    </div>
+
+    <!-- State Estimation -->
+    <section>
+        <h2>State Estimation</h2>
+
+        <p>
+            Developed a state observer to estimate system states
+            that are not directly measured by the available sensors.
+        </p>
+
+        <ul>
+            <li><strong>Observer Design:</strong> Designed an observer using the linear state-space model.</li>
+            <li><strong>Pole Placement:</strong> Selected observer poles to achieve suitable estimation dynamics.</li>
+            <li><strong>State Reconstruction:</strong> Estimated unmeasured states using system inputs and sensor outputs.</li>
+        </ul>
+    </section>
+
+    <!-- Simulation -->
+    <section>
+        <h2>Simulation & Testing</h2>
+
+        <p>
+            Implemented the mathematical model and control
+            architecture in MATLAB and Simulink to evaluate
+            closed-loop system performance.
+        </p>
+
+        <p>
+            Tested the controller under different operating
+            conditions, including reference changes, external
+            disturbances, model uncertainty and actuator
+            saturation.
+        </p>
+
+        <ul>
+            <li>Evaluated rise time, settling time and overshoot.</li>
+            <li>Investigated roll, pitch and yaw tracking performance.</li>
+            <li>Examined the effects of actuator saturation and control input constraints.</li>
+            <li>Evaluated robustness under disturbances and modelling uncertainty.</li>
+        </ul>
+    </section>
+
+    <!-- Simulation Image -->
+    <div class="project-image">
+        <img src="../images/Observer_Step3.png"
+             alt="Quadcopter Simulink simulation results">
+    </div>
+
+    <!-- Results -->
+    <section>
+        <h2>Results & Analysis</h2>
+
+        <p>
+            Analysed the closed-loop response of the quadcopter
+            through simulation, examining the performance of
+            the controller and state observer.
+        </p>
+
+        <p>
+            Simulation results were used to investigate
+            tracking accuracy, transient response, disturbance
+            rejection and the limitations of the linearised
+            model when applied to the full nonlinear system.
+        </p>
+    </section>
+
+    <!-- Technologies -->
+    <section>
+        <h2>Technologies</h2>
+
+        <p>
+            MATLAB · Simulink · State-Space Modelling ·
+            Control Systems · Pole Placement · PID Control ·
+            Observer Design · Nonlinear Dynamics
+        </p>
+    </section>
+
+    <!-- GitHub Link -->
+    <div class="github-link">
+        <a href="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY"
+           target="_blank"
+           class="button">
+            View Project Source Code →
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2026 Pratik Napit. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+

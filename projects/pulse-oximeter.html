@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse Oximeter | Pratik Napit</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Reduce spacing between project sections */
+        section {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        /* Centre GitHub button */
+        .github-link {
+            text-align: center;
+            margin: 30px auto;
+        }
+
+        /* Project images */
+        .project-image {
+            max-width: 850px;
+            width: 100%;
+            margin: 25px auto;
+            text-align: center;
+        }
+
+        .project-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">PN.</div>
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction -->
+    <section class="hero">
+        <p class="subtitle">ANALOG ELECTRONICS / BIOMEDICAL INSTRUMENTATION</p>
+
+        <h1>Pulse <span>Oximeter</span></h1>
+
+        <p class="description">
+            Designed and constructed a pulse oximeter using red and
+            infrared LEDs, photodetection and analogue signal
+            conditioning to measure pulse rate and estimate
+            peripheral blood oxygen saturation (SpO₂).
+        </p>
+    </section>
+
+    <!-- Overview -->
+    <section>
+        <h2>Project Overview</h2>
+
+        <p>
+            Developed a pulse oximeter to investigate the principles
+            of photoplethysmography (PPG) and non-invasive blood
+            oxygen saturation measurement.
+        </p>
+
+        <p>
+            The system uses red and infrared light to measure changes
+            in light absorption caused by pulsatile blood flow.
+            These optical measurements are processed to extract
+            the AC and DC signal components required for
+            estimating blood oxygen saturation.
+        </p>
+    </section>
+
+    <!-- System Architecture -->
+    <section>
+        <h2>System Design</h2>
+
+        <p>
+            The pulse oximeter consists of several interconnected
+            electronic components responsible for optical sensing,
+            analogue signal processing and measurement.
+        </p>
+
+        <ul>
+            <li><strong>Red and Infrared LEDs:</strong> Provide optical signals at different wavelengths to measure changes in blood absorption.</li>
+            <li><strong>Photodetector:</strong> Detects transmitted or reflected light and converts it into an electrical signal.</li>
+            <li><strong>Amplification:</strong> Uses operational amplifier circuitry to amplify small variations in the photodetector output.</li>
+            <li><strong>Filtering:</strong> Removes unwanted noise and isolates the pulsatile signal associated with the heartbeat.</li>
+            <li><strong>Signal Acquisition:</strong> Uses an Arduino to sample and record the conditioned analogue signals.</li>
+            <li><strong>SpO₂ Estimation:</strong> Processes the red and infrared AC/DC signal ratios to estimate blood oxygen saturation.</li>
+        </ul>
+    </section>
+
+    <!-- Circuit Image -->
+    <div class="project-image">
+        <img src="../images/pulse-oximeter-circuit.png"
+             alt="Pulse oximeter circuit design">
+    </div>
+
+    <!-- Implementation -->
+    <section>
+        <h2>Implementation</h2>
+
+        <p>
+            The analogue front-end was constructed using an LM358
+            operational amplifier, with amplification and filtering
+            stages designed to extract the small pulsatile component
+            from the photodetector output.
+        </p>
+
+        <p>
+            Red and infrared LED measurements were acquired
+            separately, allowing the corresponding optical signals
+            to be analysed and compared.
+        </p>
+
+    </section>
+
+    <!-- Results Image -->
+    <div class="project-image">
+        <img src="../images/pulse-oximeter-photo.jpeg"
+             alt="Pulse oximeter signal waveform">
+    </div>
+
+    <!-- Simulation and Results -->
+    <section>
+        <h2>Signal Processing & Results</h2>
+
+        <p>
+            Oscilloscope measurements and recorded waveforms
+            were used to examine the amplified photoplethysmography
+            signal and evaluate the performance of the analogue
+            signal conditioning circuit.
+        </p>
+
+        <p>
+            The AC and DC components of the red and infrared
+            measurements were used to calculate the ratio of ratios,
+            forming the basis for SpO₂ estimation.
+        </p>
+    </section>
+
+        <!-- Results Image -->
+    <div class="project-image">
+        <img src="../images/Red_Led_2.png"
+             alt="Pulse oximeter signal waveform">
+    </div>
+
+    <!-- Technologies -->
+    <section>
+        <h2>Technologies & Equipment</h2>
+
+        <p>
+            Analog Electronics · LM358 Operational Amplifier ·
+            Arduino · Python · Photoplethysmography ·
+            Signal Conditioning · Oscilloscope
+        </p>
+    </section>
+
+    <!-- GitHub Link -->
+    <div class="github-link">
+        <a href="https://github.com/pratiknapit/pulse-oximeter"
+           target="_blank"
+           class="button">
+            View Project Source Code →
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2026 Pratik Napit. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

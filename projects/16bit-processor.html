@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16-Bit Processor | Pratik Napit</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Reduce spacing between project sections */
+        section {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        /* Centre GitHub button */
+        .github-link {
+            text-align: center;
+            margin: 30px auto;
+        }
+
+        /* Processor architecture image */
+        .project-image {
+            max-width: 850px;
+            width: 100%;
+            margin: 25px auto;
+            text-align: center;
+        }
+
+        .project-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">PN.</div>
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction -->
+    <section class="hero">
+        <p class="subtitle">DIGITAL DESIGN / COMPUTER ARCHITECTURE</p>
+
+        <h1>16-Bit <span>Processor Design</span></h1>
+
+        <p class="description">
+            Designed and implemented a 16-bit processor using Verilog,
+            exploring digital logic, datapath architecture,
+            instruction execution and hardware verification.
+        </p>
+    </section>
+
+    <!-- Overview -->
+    <section>
+        <h2>Project Overview</h2>
+
+        <p>
+            Designed and implemented a 16-bit processor using
+            Verilog hardware description language (HDL).
+            The processor integrates a datapath, control unit,
+            registers and arithmetic logic unit to execute
+            instructions through a coordinated hardware architecture.
+        </p>
+    </section>
+
+    <!-- Architecture -->
+    <section>
+        <h2>Processor Architecture</h2>
+
+        <p>
+            The processor consists of several interconnected
+            hardware components responsible for instruction
+            processing and execution.
+        </p>
+
+        <ul>
+            <li><strong>Datapath:</strong> Handles the movement and processing of 16-bit data.</li>
+            <li><strong>Controller:</strong> Decodes instructions and generates control signals.</li>
+            <li><strong>ALU:</strong> Performs arithmetic and logical operations.</li>
+            <li><strong>Registers:</strong> Store intermediate data and processor state.</li>
+            <li><strong>Instruction memory and data memory:</strong> Holds temporary local variables (stack), data segment (global and static variables) and text instruction memory.</li>
+        </ul>
+    </section>
+
+    <!-- Architecture Image -->
+    <div class="project-image">
+        <img src="../images/16-bit-processor-architecture.png"
+             alt="16-bit processor architecture">
+    </div>
+
+    <!-- Implementation -->
+    <section>
+        <h2>Implementation</h2>
+
+        <p>
+            The processor was implemented using modular Verilog
+            code, allowing individual hardware components to be
+            developed and tested independently before integration.
+        </p>
+
+        <p>
+            Verilog testbenches and simulation were used in GTKWave to
+            verify the behaviour of the processor, timing issues and
+            individual components.
+
+            Used Quartus (itegrated IDE) to push Verilog design onto FPGA board. 
+            This project used the DE1-SoC FPGA board.
+        </p>
+    </section>
+
+    <!-- GitHub Link -->
+    <div class="github-link">
+        <a href="https://github.com/pratiknapit/16bit_verlilog_processor"
+           target="_blank"
+           class="button">
+            View Verilog Source Code →
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2026 Pratik Napit. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
